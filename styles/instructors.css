@@ -1,0 +1,31 @@
+.instructors {
+  padding: 5rem;
+}
+.instructor {
+  max-width: 40rem;
+  padding: 1rem;
+  margin: auto auto 2rem 0;
+  border: 2px solid var(--gray-accent-color);
+  border-radius: 2%;
+}
+.instructor-right {
+  margin: auto 0 2rem auto;
+}
+.instructors__title {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.instructor__title {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.instructor__title--image {
+  margin-right: 1rem;
+}
+.instructors__content hr {
+  border-color: var(--gray-accent-color);
+}
+.instructor__desc {
+  font-weight: bold;
+}

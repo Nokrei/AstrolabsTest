@@ -1,0 +1,13 @@
+.faq {
+  padding: 5rem;
+}
+.faq h1 {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.faq-content {
+  padding: 3rem 4rem;
+}
+.accordion {
+  font-weight: bold;
+}

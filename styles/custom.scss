@@ -1,0 +1,11 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+/* make changes to the !default Bootstrap variables */
+$primary: #204e9f;
+$theme-colors: (
+  "primary": $primary,
+);
+/* finally, import Bootstrap to set the changes! */
+@import "../node_modules//bootstrap/scss/bootstrap.scss";

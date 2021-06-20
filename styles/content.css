@@ -1,0 +1,86 @@
+.content {
+  padding: 5rem 5rem 0 5rem;
+}
+.content__general {
+  text-align: center;
+}
+.content__modules {
+  padding-top: 5rem;
+}
+.module {
+  margin-bottom: 1rem;
+  min-height: 25rem;
+}
+.module h4 {
+  min-height: 4rem;
+}
+.module p:not(:first-of-type) {
+  min-height: 8rem;
+}
+.module div {
+  padding: 1rem;
+  height: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: relative;
+}
+.module a {
+  position: absolute;
+  bottom: 2rem;
+}
+.module__number {
+  text-transform: uppercase;
+  color: gray;
+  font-weight: bold;
+}
+.platforms {
+  padding: 5rem 0 3rem 0;
+}
+.platforms h2 {
+  text-align: center;
+}
+.text-vertical {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: gray;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-align: center;
+  margin-top: 1rem;
+}
+.platforms .col {
+  display: block;
+  text-align: center;
+}
+.platforms img {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: 1rem;
+}
+.col-custom {
+  display: flex;
+  justify-content: space-evenly;
+}
+.included {
+  padding-top: 5rem;
+}
+.included h2 {
+  padding-bottom: 3rem;
+}
+.included__group {
+  margin-bottom: 1rem;
+}
+.included__group--image {
+  min-height: 2rem;
+  display: grid;
+  align-content: center;
+  margin-bottom: 0.5rem;
+}
+.audience {
+  padding-top: 5rem;
+}
+.audience__text h2 {
+  padding-bottom: 2rem;
+}
+.audience__image-container img {
+  height: auto;
+  width: 100%;
+}

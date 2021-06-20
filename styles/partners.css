@@ -1,0 +1,14 @@
+.partners {
+  padding: 5rem;
+  text-align: center;
+}
+.partners h2 {
+  padding-bottom: 3rem;
+}
+.glide__slide {
+  justify-self: center;
+  align-self: center;
+}
+.partners li img {
+  transform: scale(0.6);
+}

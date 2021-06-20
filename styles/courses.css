@@ -1,0 +1,44 @@
+.courses {
+  padding: 5rem;
+}
+.courses-title {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.courses-content {
+  width: 70%;
+  margin: auto;
+}
+.course {
+  max-width: 20rem;
+  min-height: 22rem;
+  margin: auto;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+.course__details--location {
+  height: 4rem;
+}
+
+.course__details--location,
+.course__details--time {
+  display: flex;
+  padding-top: 1rem;
+}
+.course__details p {
+  padding-left: 0.5rem;
+  font-weight: bold;
+}
+.course__buttons {
+  position: absolute;
+  bottom: 2rem;
+  display: grid;
+  font-weight: bold;
+}
+.course__buttons button {
+  margin-bottom: 0.5rem;
+}
+.course__buttons a {
+  font-size: 0.7rem;
+}

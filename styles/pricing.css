@@ -1,0 +1,40 @@
+.pricing {
+  padding: 5rem;
+}
+.pricing h1 {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.option {
+  padding: 1rem 2rem;
+  max-width: 32rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.option__info h4:first-of-type {
+  padding-bottom: 0.5rem;
+}
+.option__info h4:nth-of-type(2) {
+  font-weight: bold;
+}
+.option__info h4 span {
+  font-size: 2.5rem;
+}
+.option__info p {
+  font-weight: bold;
+}
+.option__info p span {
+  margin-left: 1rem;
+  padding: 0.1rem 0.5rem;
+  background-color: #3eedbf;
+}
+.option__details ul {
+  list-style: none;
+  padding: 0;
+}
+.option__details li {
+  padding-bottom: 0.5rem;
+}
+.option__details i {
+  color: #02a959;
+  margin-right: 1rem;
+}

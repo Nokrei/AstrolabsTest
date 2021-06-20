@@ -1,0 +1,38 @@
+:root {
+  --blue-accent-color: #204e9f;
+  --gray-accent-color: #ebeaed;
+  --gray-text: #151439;
+  --white-background: #ffffff;
+  --lightgray-background: #f8f8f8;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.blue-accent {
+  color: var(--blue-accent-color);
+}
+.gray-accent {
+  color: var(--gray-accent-color);
+}
+.gray-text {
+  color: var(--gray-text);
+  opacity: 0.4;
+  font-weight: bold;
+}
+.background-white {
+  background-color: var(--white-background);
+}
+.background-light {
+  background-color: var(--lightgray-background);
+}
+a {
+  color: var(--blue-accent-color);
+}
+.bi-check2 {
+  color: #02a959;
+}
+.box-shadow-light {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

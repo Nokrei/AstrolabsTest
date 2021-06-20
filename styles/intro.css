@@ -1,0 +1,56 @@
+.intro {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
+  padding: 0 0 0 5rem;
+}
+.bootcamp-info__introduction {
+  width: 40%;
+}
+.bootcamp-info__introduction p:first-of-type {
+  text-transform: uppercase;
+}
+.bootcamp-info__introduction p {
+  font-size: 1.2rem;
+}
+.bootcamp-info__introduction p:first-of-type {
+  font-size: 1rem;
+}
+.bootcamp-info__introduction p:last-of-type {
+  font-weight: bold;
+}
+.bootcamp-info__details {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 1rem;
+}
+
+.bootcamp-info__details--text {
+  padding: 0 1rem;
+}
+.bootcamp-info__details--calendar button {
+  border-radius: 50px;
+  font-size: 0.8rem;
+}
+.bootcamp-info__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.bootcamp-info__buttons button {
+  font-size: 1.5rem;
+  height: 4rem;
+  width: 18rem;
+}
+.button-text-small {
+  font-size: 0.7rem;
+}
+.bootcamp-info__buttons .btn-light {
+  width: auto;
+}
+.navbar {
+  z-index: 99999;
+  margin-bottom: 5rem;
+}

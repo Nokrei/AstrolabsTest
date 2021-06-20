@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS. -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> -->
+    <!-- Glide JS Required Core Stylesheet. -->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <!-- Glide JS Optional Theme Stylesheet. -->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    <!-- Bootstrap override -->
+    <link rel='stylesheet' href='./styles/custom.css' />
+    <!-- CSS for coresponding sections. Main.css file for global use.  -->
+    <link rel='stylesheet' href='./styles/main.css' />
+    <link rel='stylesheet' href='./styles/intro.css' />
+    <link rel='stylesheet' href='./styles/overview.css' />
+    <link rel='stylesheet' href='./styles/content.css' />
+    <link rel='stylesheet' href='./styles/instructors.css' />
+    <link rel='stylesheet' href='./styles/courses.css' />
+    <link rel='stylesheet' href='./styles/pricing.css' />
+    <link rel='stylesheet' href='./styles/alumni.css' />
+    <link rel='stylesheet' href='./styles/partners.css' />
+    <link rel='stylesheet' href='./styles/promo.css' />
+    <link rel='stylesheet' href='./styles/faq.css' />
+    <link rel='stylesheet' href='./styles/modal.css' />
+
+    <title>Astrolabs</title>
+    <!-- Bootstrap Script. -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <!-- GlideJS Script. -->
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+</head>
+
+<body>
+
+    <section class='intro'>
+        <article class='bootcamp-info'>
+            <section class='bootcamp-info__introduction'>
+                <p>open academy / coding</p>
+                <h1>Coding and Computer <br />
+                    Science Bootcamp
+                </h1>
+                <p>Learn beginner and advanced coding at the region's largest Coding Bootcamp. Become a full stack
+                    developer in 2 months
+                </p>
+                <p>Starting from AED 1,999 or 3 installments of AED 666</p>
+            </section>
+            <section class='bootcamp-info__details'>
+                <div class='bootcamp-info__details--calendar'>
+                    <i class="bi bi-calendar4-week"></i>
+                    <span class='bootcamp-info__details--text' id='date'>10 Aug 21 - 21 Aug 21</span>
+                    <button class='btn btn-custom-color btn-sm'>
+                        9 days left</button>
+                </div>
+                <div class='bootcamp-info__details--location'>
+                    <i class="bi bi-geo-alt"></i><span class='bootcamp-info__details--text'>Online Live &
+                        AstroLabs
+                        Dubai (JLT, Dubai)</span>
+                </div>
+                <div class='bootcamp-info__details--rating'>
+                    <i class="bi bi-star"></i> <span class='bootcamp-info__details--text'>9.6 (92 reviews)</span>
+                </div>
+            </section>
+            <section class='bootcamp-info__buttons'>
+                <span class='bootcamp-info__buttons--left'>
+                    <button class='btn btn-outline-primary'>Request information</button>
+                    <button class='btn btn-primary '>Sign up <p class='button-text-small'>Money
+                            back
+                            guarantee</p> </button>
+                </span>
+                <span class='bootcamp-info__buttons--right'>
+                    <button class='btn btn-light'><i class="bi bi-award"></i> AstroLabs KHDA certification</button>
+                </span>
+            </section>
+            <br />
+            <a href='#' rel='noreferrer noopener'>Request a call back</a>
+        </article>
+    </section>
+    <script>
+        const foo = new Date().getMonth() + 1
+        const bar = document.getElementById('date').innerHTML.slice(0, 7).split(' ')
+        const day = parseFloat(bar[0])
+        const monthString = bar[1]
+        let month = null
+        const monthList = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+        monthList.map((item) => {
+            item === monthString ? month = monthList.indexOf(item) + 1 : null
+        })
+        console.log(foo);
+
+    </script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id='navbar'>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Overview</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Content </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Instructors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Schedules</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Our Alumni</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ's</a>
+                </li>
+    </nav>
+    <!-- Script for the navBar. -->
+    <script>
+        window.onscroll = () => {
+            fixNavbar()
+        };
+        const navBar = document.getElementById('navbar');
+        const sticky = navBar.offsetTop;
+        const fixNavbar = () => {
+            window.pageYOffset >= sticky ? navBar.classList.add('sticky') : navBar.classList.remove('sticky')
+        }
+    </script>
+    <section class='overview'>
+        <article class='overview__learn'>
+            <div class='overview__learn--text-container'>
+                <div class='overview__learn--desc'>
+                    <h1>Learn full-stack <br /> coding in two months</h1>
+                    <p>Classes taught by deeply experienced instructors and mentors with <br />
+                        over 100 hours of face time, to help you build and launch your <br />
+                        full-stack application in 2 months.</p>
+                </div>
+                <div class='overview__learn--outcomes'>
+                    <h3>Course outcomes</h3>
+                    <ul>
+                        <li><i class="bi bi-check2"></i> Get a tech job</li>
+                        <li><i class="bi bi-check2"></i> Build your full stack portfolio</li>
+                        <li><i class="bi bi-check2"></i> Launch your own apps</li>
+                        <li><i class="bi bi-check2"></i> Stay up to date with the latest coding trends</li>
+                    </ul>
+                </div>
+            </div>
+
+            <iframe src="https://www.youtube.com/embed/O-IcGDkLNH8">
+            </iframe>
+
+
+        </article>
+        <article class='overview__course'>
+            <div class=overview__course--images>
+                <div>
+                    <img src='./images/Image5.png' alt='Training' />
+                    <img src='./images/Image4.png' alt='Front desk' />
+                </div>
+                <div>
+                    <img src='./images/Image6.png' alt='Speach' />
+                    <img src='./images/Image7.png' alt='Bootcamp' />
+                </div>
+
+            </div>
+            <div class='overview__course--text'>
+                <h1>About the course</h1>
+                <h4>Learn to Code from the Ground Up</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis consectetur elit. Etiam a erat
+                    bibendum, consequat dui in.</p>
+
+                <h4>Fully Online Live Remote Learning</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis consectetur elit. Etiam a erat
+                    bibendum, consequat dui in.</p>
+
+                <h4>Open To All Skill Levels</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis consectetur elit. Etiam a erat
+                    bibendum, consequat dui in.</p>
+
+                <h4>Hands-on Practical Coding</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis consectetur elit. Etiam a erat
+                    bibendum, consequat dui in.</p>
+
+                <h4>Career Opportunities</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis consectetur elit. Etiam a erat
+                    bibendum, consequat dui in.</p>
+            </div>
+        </article>
+    </section>
+    <section class='content'>
+        <article class='content__general'>
+            <h1>What you'll learn</h1>
+            <p>Practical, project-based knowledge to build and launch your full-stack <br />
+                application. The bootcamp is split into two parts.
+            </p><br />
+            <button class='btn btn-primary'>Request information</button><br /><br />
+            <a href='#' rel='noreferrer noopener'>Questions? Get in touch</a>
+        </article>
+        <article class='content__modules'>
+            <div class='row'>
+                <div class='module col'>
+                    <div>
+
+                        <p class='module__number '>
+                            module 1
+                        </p>
+
+                        <h4>
+                            Intro to Coding, Computer Science, and App Development
+                        </h4>
+                        <p>Learn the basics of coding, how to build a website and mobile app as well as how web servers,
+                            domains and hosting works.
+                            You’ll also learn about how to build apps quickly using a variety of No Code Solutions.
+                        </p>
+                        <a href='#' rel='noreferrer noopener'>What's covered?</a>
+                    </div>
+
+                </div>
+                <div class='module col'>
+                    <div>
+                        <p class='module__number'> module 2
+                        </p>
+                        <h4>
+                            HTML, CSS, and Web Development
+                        </h4>
+                        <p>Build a website from scratch with HTML & CSS, participate in a practical Coding Session and
+                            upload your website online
+                            using GitHub and Netlify
+
+                        </p><a href='#' rel='noreferrer noopener'>What's covered?</a>
+                    </div>
+
+                </div>
+                <div class='module col'>
+                    <div>
+                        <p class='module__number'> module 3
+                        </p>
+                        <h4>
+                            Javascript & Python Programming
+
+                        </h4>
+                        <p>In this module you will learn the basics of Javascript, and Python Syntax and set up the
+                            environment to start coding on
+                            your machine.
+
+                        </p><a href='#' data-bs-toggle="modal" data-bs-target="#module3Modal">What's covered?</a>
+                    </div>
+
+                </div>
+                <div class='module col'>
+                    <div>
+                        <p class='module__number'> module 4
+                        </p>
+                        <h4>
+                            Data Structures and Algorithms
+                        </h4>
+                        <p>Learn computer science data structures and how to solve advanced algorithms
+
+                        </p><a href='#' rel='noreferrer noopener'>What's covered?</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class='row'>
+                <div class='module col'>
+                    <div>
+                        <p class='module__number'>
+                            module 5
+                        </p>
+                        <h4>
+                            Backends & Databases
+                        </h4>
+                        <p>In this section we’ll be covering JavaScript Backends & Databases, how to use JavaScript with
+                            Node JS, Express, MongoDB,
+                            and Mongoose to create state of the art applications.
+
+                        </p><a href='#' rel='noreferrer noopener'>What's covered?</a>
+                    </div>
+
+                </div>
+                <div class='module col'>
+                    <div>
+                        <p class='module__number'> module 6
+                        </p>
+                        <h4>
+                            Cloud, APIs, and DevOps
+                        </h4>
+                        <p>Learn how to host, deploy and scale cloud applications
+
+                        </p><a href='#' rel='noreferrer noopener'>What's covered?</a>
+                    </div>
+
+                </div>
+                <div class='module col'>
+                    <div>
+                        <p class='module__number'> module 7
+                        </p>
+                        <h4>
+                            Advanced UI with ReactJS
+                        </h4>
+                        <p>This comprehensive, intensive module covers how to build a complete frontend application with
+                            React, with an additional
+                            section on how to create mobile apps using React Native.
+
+                        </p><a href='#' rel='noreferrer noopener'>What's covered?</a>
+                    </div>
+
+                </div>
+                <div class='module col'>
+                    <div>
+                        <p class='module__number'> module 8
+                        </p>
+                        <h4>
+                            Final Project Demo & Wrap Up
+                        </h4>
+                        <p>This module is the culmination of all of your hard work, where you’ll put everything you’ve
+                            learned into a full stack
+                            web app and deploy it online
+                        </p><a href='#' rel='noreferrer noopener'>What's covered?</a>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+        <article class='platforms'>
+            <h2>Platforms covered</h2>
+            <div class='row justify-content-evenly'>
+                <div class='col'>
+                    <div class='col-custom'>
+                        <div class=' text-vertical'>back end</div>
+                        <img src='./images/platforms/Mongo.png' alt='MongoDB' />
+                    </div>
+                </div>
+                <div class='col'><img src='./images/platforms/Node.png' alt='NodeJS' /></div>
+                <div class='col'><img src='./images/platforms/Git.png' alt='GitHub' /></div>
+            </div>
+            <div class='row justify-content-evenly'>
+                <div class='col'>
+                    <div class='col-custom'>
+                        <div class='text-vertical'>front end</div>
+                        <img src='./images/platforms/React.png' alt='ReactJS' />
+                    </div>
+                </div>
+                <div class='col'><img src='./images/platforms/HTML.png' alt='HTML5' /></div>
+                <div class='col'><img src='./images/platforms/CSS.png' alt='CSS3' /></div>
+            </div>
+        </article>
+        <article class='included'>
+            <h2>What is included?</h2>
+            <div class='row '>
+                <div class=' col'>
+                    <div class='included__group'>
+                        <div class='included__group--image'><img src='./images/icons/Camera.png' alt='Camera'></div>
+
+                        <div class='included__group--text'>9 online live modules held on Zoom with one of our expert
+                            instructors
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class='included__group'>
+                        <div class='included__group--image'><img src='./images/icons/Calendar.png' alt='Calendar'></div>
+                        <div class='included__group--text'>Weekly office hours with instructors and mentors to progress
+                            your projects</div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class='included__group'>
+                        <div class='included__group--image'><img src='./images/icons/Avatar.png' alt='Avatar'></div>
+                        <div class='included__group--text'>A vibrant alumni community of the largest number of coding
+                            bootcampers in the region
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='row '>
+                <div class='col'>
+                    <div class='included__group'>
+                        <div class='included__group--image'><img src='./images/icons/OK.png' alt='OK'></div>
+                        <div class='included__group--text'>Interactive demo day at the end of the course with votes for
+                            the winner and prizes!</div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class='included__group'>
+                        <div class='included__group--image'><img src='./images/icons/Bolt.png' alt='Bolt'></div>
+                        <div class='included__group--text'>Online community forum to troubleshoot, learn and chat with
+                            your classmates
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class='included__group'>
+                        <div class='included__group--image'><img src='./images/icons/Tags.png' alt='Tags'></div>
+                        <div class='included__group--text'>Over 100 hours of instruction and mentorship</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class='audience'>
+            <div class='row'>
+                <div class='col my-auto'>
+                    <div class='audience__text'>
+                        <h2>Who is it for</h2>
+                        <div class='audience__text--desc'>
+                            <h4>Career starters
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                        </div>
+                    </div>
+                    <div class='audience__text'>
+                        <div class='audience__text--desc'>
+                            <h4>Career starters
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                        </div>
+                    </div>
+                    <div class='audience__text'>
+                        <div class='audience__text--desc'>
+                            <h4>Career starters
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class='col my-auto'>
+                    <div class='audience__image-container'>
+                        <img src='./images/Students.png' alt='Students'>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section class='instructors'>
+        <article class='instructors__title'>
+            <h1>Meet Your Instructors</h1>
+            <h4>Expert practitioners that teach paractical knowledge you can immediately implement</h4>
+        </article>
+        <article class='instructors__content'>
+            <div class='row '>
+                <div class='col'>
+                    <div class='instructor'>
+                        <div class='instructor__title'>
+                            <div class='instructor__title--image'>
+                                <img src='./images/Ahmad.png' alt='Ahmad Abugosh' />
+                            </div>
+                            <div class='instructor__title--text'>
+                                <h4 class='blue-accent'>Ahmad Abugosh</h4>
+                                <p class='gray-text'>Director of Marketing & Learning Programs at AstroLabs</p>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class='instructor__desc'>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat. Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                laborum.</p><br />
+                            <a href='#' rel='noopener noreferrer'>Connect on Linkedin</a>
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class='instructor instructor-right'>
+                        <div class='instructor__title'>
+                            <div class='instructor__title--image'>
+                                <img src='./images/Ahmad.png' alt='Minhaj Mehmood' />
+                            </div>
+                            <div class='instructor__title--text'>
+                                <h4 class='blue-accent'>Minhaj Mehmood</h4>
+                                <p class='gray-text'>Head of IT Department at Innovations Group UAE</p>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class='instructor__desc'>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat. Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                laborum.</p><br />
+                            <a href='#' rel='noopener noreferrer'>Connect on Linkedin</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='row justify-content-between'>
+                <div class='col'>
+                    <div class='instructor'>
+                        <div class='instructor__title'>
+                            <div class='instructor__title--image'>
+                                <img src='./images/Ahmad.png' alt='Maha Khalaf' />
+                            </div>
+                            <div class='instructor__title--text'>
+                                <h4 class='blue-accent'>Maha Khalaf</h4>
+                                <p class='gray-text'>SEI Instructor | Magento E-commerce | Entrepreneur</p>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class='instructor__desc'>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat. Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                laborum.</p><br />
+                            <a href='#' rel='noopener noreferrer'>Connect on Linkedin</a>
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class='instructor instructor-right'>
+                        <div class='instructor__title'>
+                            <div class='instructor__title--image'>
+                                <img src='./images/Ahmad.png' alt='Danial Entezari' />
+                            </div>
+                            <div class='instructor__title--text'>
+                                <h4 class='blue-accent'>Danial Entezari</h4>
+                                <p class='gray-text'>Technology Director at Huephase
+                                </p>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class='instructor__desc'>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat. Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                laborum.</p><br />
+                            <a href='#' rel='noopener noreferrer'>Connect on Linkedin</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </section>
+    <section class='courses background-light'>
+        <article class='courses-title'>
+            <h1>Upcoming courses</h1>
+        </article>
+        <article class='courses-content'>
+            <div class='row'>
+                <div class='col'>
+                    <div class='course background-white'>
+                        <div class='course__dates'>
+                            <h4>March 31 - May 22</h4>
+                        </div>
+                        <div class='course__details'>
+                            <div class='course__details--location'>
+                                <div><img src='./images/icons/Location.png' alt='Location' /></div>
+                                <p>Online Live & AstroLabs Dubai (JLT, Dubai)</p>
+                            </div>
+                            <div class='course__details--time'>
+                                <div><img src='./images/icons/Time.png' alt='Time' /></div>
+                                <p>Saturday 10am-4pm, Monday & Wednesday 6:30-9pm</p>
+                            </div>
+                        </div>
+
+                        <div class='course__buttons'><button class='btn btn-primary'>Sign up</button>
+                            <a href='#' data-bs-toggle="modal" data-bs-target="#course1Modal">See
+                                Schedule</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class='course background-white'>
+                        <div class='course__dates'>
+                            <h4>March 19 - July 3</h4>
+                        </div>
+                        <div class='course__details'>
+                            <div class='course__details--location'>
+                                <div><img src='./images/icons/Location.png' alt='Location' /></div>
+                                <p>Online Live</p>
+                            </div>
+                            <div class='course__details--time'>
+                                <div><img src='./images/icons/Time.png' alt='Time' /></div>
+                                <p>Saturday 10am-4pm, Monday & Wednesday 6:30-9pm</p>
+                            </div>
+                        </div>
+
+
+                        <div class='course__buttons'>
+                            <button class='btn btn-primary'>Sign up</button>
+                            <a href='#' rel='noreferrer noopener' class='blue-accent'>See Schedule</a>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class='course background-white'>
+                        <div class='course__dates'>
+                            <h4>July 28 - September 11</h4>
+                        </div>
+                        <div class='course__details'>
+                            <div class='course__details--location'>
+                                <div><img src='./images/icons/Location.png' alt='Location' /></div>
+                                <p>Online Live</p>
+                            </div>
+                            <div class='course__details--time'>
+                                <div><img src='./images/icons/Time.png' alt='Time' /></div>
+                                <p>Saturday 10am-4pm, Monday & Wednesday 6:30-9pm</p>
+                            </div>
+                        </div>
+
+                        <div class='course__buttons'><button class='btn btn-primary'>Sign up</button>
+                            <a href='#' rel='noreferrer noopener' class='blue-accent'>See Schedule</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section class='pricing'>
+        <h1>Fess and payment options</h1>
+        <article class='pricing-options'>
+            <div class='row'>
+                <div class='col'>
+                    <div class='option'>
+                        <div class='option__info'>
+                            <h4>Introduction to coding</h4>
+                            <h4>AED <span>1,999</span></h4>
+                            <p>or 3 installments of AED 666<span>tabby*</span></p>
+                            <p class='gray-text'>March 31 - May 22 | 4 weeks</p>
+                        </div>
+                        <hr />
+                        <div class='option__details'>
+                            <ul>
+                                <li><i class="bi bi-check2"></i>Beginner Friendly</li>
+                                <li><i class="bi bi-check2"></i>HTML, CSS, JavaScript. Python, GitHub and the Terminal
+                                </li>
+                                <li><i class="bi bi-check2"></i>Build a coding portfolio to kickstart your career</li>
+                                <li><i class="bi bi-check2"></i>Intro to Coding Certification</li>
+                            </ul>
+                        </div>
+                        <button class='btn btn-primary'>Sign up</button>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class='option'>
+                        <div class='option__info'>
+                            <h4>Full-stack coding</h4>
+                            <h4>AED <span>3,499</span></h4>
+                            <p>or 3 installments of AED 1,166<span>tabby*</span></p>
+                            <p class='gray-text'>March 31 - May 22 | 4 weeks</p>
+                        </div>
+                        <hr />
+                        <div class='option__details'>
+                            <ul>
+                                <li><i class="bi bi-check2"></i>Learn MongoDB, Express, React & Node JS</li>
+                                <li><i class="bi bi-check2"></i>One-to-one support
+                                </li>
+                                <li><i class="bi bi-check2"></i>Build a functional social media application</li>
+                                <li><i class="bi bi-check2"></i>Full-Stack Coding Certification</li>
+                            </ul>
+                        </div>
+                        <button class='btn btn-primary'>Sign up</button>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class='option'>
+                        <div class='option__info'>
+                            <h4>Full coding bootcamp</h4>
+                            <h4>AED <span>4,999</span></h4>
+                            <p>or 3 installments of AED 1,666<span>tabby*</span></p>
+                            <p class='gray-text'>March 31 - May 22 | 8 weeks</p>
+                        </div>
+                        <hr />
+                        <div class='option__details'>
+                            <ul>
+                                <li><i class="bi bi-check2"></i>Includes Intro to Coding & Full-Stack Coding programs
+                                </li>
+                                <li><i class="bi bi-check2"></i>Over 100 hours of Coding practice
+                                </li>
+                                <li><i class="bi bi-check2"></i>Specialized career support from AstroLabs Talent</li>
+                                <li><i class="bi bi-check2"></i>Coding Bootcamp MERN Stack Certification</li>
+                            </ul>
+                        </div>
+                        <button class='btn btn-primary'>Sign up</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section class='alumni'>
+        <article class='alumni-info'>
+            <h1>Our alumni</h1>
+            <h4>Our graduates are from big companies, small companies, they are founders, career <br /> changers and
+                lifelong
+                learners. Join us
+                and meet your tribe!</h4>
+            <p>reviews</p>
+        </article>
+        <artcile class='alumni-content'>
+            <div class='row'>
+                <div class='col'>
+                    <div class='testimonial'>
+                        <div class='testimonial__text'>
+                            <p id='text1'>The Astrolabs part-time Coding bootcamp is focused and current, teaching
+                                sought after
+                                skills around fullstack
+                                JavaScript. I never imagined that I’d be able to build a complete MERN stack application
+                                in 8 weeks, whilst still
+                                working full time. This bootcamp delivered beyond my expectations and cemented my desire
+                                to pursue web development.</p>
+                        </div>
+                        <div class='testimonial__student'>
+                            <img src='./images/Jane.png' alt='Jane Cooper' />
+                            <p id='student1'>Jane Cooper</p>
+                            <p class='gray-text' id='position1'>CEO at ABC Corporation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class='testimonial'>
+                        <div class='testimonial__text'>
+                            <p id='text2'>The Astrolabs part-time Coding bootcamp is focused and current, teaching
+                                sought after
+                                skills around
+                                fullstack
+                                JavaScript. I never imagined that I’d be able to build a complete MERN stack application
+                                in 8 weeks,
+                                whilst still
+                                working full time. This bootcamp delivered beyond my expectations and cemented my desire
+                                to pursue web
+                                development.</p>
+                        </div>
+                        <div class='testimonial__student'>
+                            <img src='./images/Jane.png' alt='Jane Cooper' />
+                            <p id='student2'>Jane Cooper</p>
+                            <p class='gray-text' id='position2'>CEO at ABC Corporation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class='testimonial'>
+                        <div class='testimonial__text'>
+                            <p id='text3'>The Astrolabs part-time Coding bootcamp is focused and current, teaching
+                                sought after
+                                skills around
+                                fullstack
+                                JavaScript. I never imagined that I’d be able to build a complete MERN stack application
+                                in 8 weeks,
+                                whilst still
+                                working full time. This bootcamp delivered beyond my expectations and cemented my desire
+                                to pursue web
+                                development.</p>
+                        </div>
+                        <div class='testimonial__student'>
+                            <img src='./images/Jane.png' alt='Jane Cooper' />
+                            <p id='student3'>Jane Cooper</p>
+                            <p class='gray-text' id='position3'>CEO at ABC Corporation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-check form-check-inline">
+                <input onclick="change1()" class="form-check-input" type="radio" name="inlineRadioOptions"
+                    id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1"></label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input onclick="change2()" class="form-check-input" type="radio" name="inlineRadioOptions"
+                    id="inlineRadio2" value="option2" checked>
+                <label class="form-check-label" for="inlineRadio2"></label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input onclick="change3()" class="form-check-input" type="radio" name="inlineRadioOptions"
+                    id="inlineRadio3" value="option3">
+                <label class="form-check-label" for="inlineRadio3"></label>
+            </div>
+        </artcile>
+        <!-- Script for Alumni selection. -->
+        <script>
+            const testimonialArr = [{
+
+                name: 'Janet Cooper',
+                position: 'CEO at ABC Corporation',
+                text: 'The Astrolabs part-time Coding bootcamp is focused and current, teaching sought after skills around fullstack JavaScript. I never imagined that I’d be able to build a complete MERN stack application in 8 weeks, whilst still working full time. This bootcamp delivered beyond my expectations and cemented my desire to pursue web development.'
+            },
+            {
+                name: 'John Smith',
+                position: 'CEO at AAA Corporation',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper, ante et sodales posuere, nisl ipsum interdum dui, sed ullamcorper ante quam ut ex. Nullam pharetra ante ultrices, vehicula eros nec, finibus ligula.'
+            },
+            {
+                name: 'Steve Cooper',
+                position: 'CEO at THE Corporation',
+                text: 'Praesent id ex ac libero tincidunt semper eu eget lorem. Quisque vehicula rutrum leo, eu vulputate velit scelerisque non.'
+            },
+            {
+                name: 'Alice Cooper',
+                position: 'CTO at ABC Corporation',
+                text: 'Phasellus elementum vulputate magna sit amet posuere. Etiam nulla augue, gravida id neque ut, vehicula auctor enim. Aliquam eget luctus justo. '
+            },
+            {
+                name: 'Mike Cooper',
+                position: 'CFO at ABC Corporation',
+                text: 'Quisque mi est, convallis vitae lacinia eget, ultrices vel odio. Mauris lacinia urna a ornare accumsan. Nullam eget luctus justo.'
+            },
+            {
+                name: 'Sarah Cooper',
+                position: 'COO at ABC Corporation',
+                text: 'Aliquam placerat lacus sit amet facilisis tincidunt. Aliquam et rhoncus turpis. Nulla ut leo ex. Cras eu nisl ligula. Phasellus at purus eu ante scelerisque gravida sit amet quis ligula. Integer ullamcorper, ipsum non gravida efficitur, sem lorem blandit est, euismod interdum ipsum mauris at nulla. '
+            },
+            {
+                name: 'David Cooper',
+                position: 'Tech Lead',
+                text: 'Vestibulum sed rhoncus erat. Nunc sem lacus, volutpat vel maximus ut, iaculis ac ex. Maecenas sodales tristique blandit. Curabitur eu dui porta magna accumsan ornare nec vitae eros. In maximus consequat dui vitae tristique. Morbi ac nulla felis. Cras varius et odio quis tempor.'
+            },
+            {
+                name: 'Paul Cooper',
+                position: 'Accountant',
+                text: 'Suspendisse malesuada condimentum condimentum. Praesent faucibus sem non dolor sollicitudin, vitae pharetra nunc feugiat. Aenean porta euismod mi. Suspendisse condimentum velit a quam malesuada, in cursus justo scelerisque.'
+            },
+            {
+                name: 'Kate Cooper',
+                position: 'Engineer',
+                text: 'ulla auctor justo quis laoreet porta. Etiam ac pharetra ipsum. Donec tempus nunc commodo odio facilisis bibendum. Quisque gravida mattis purus in condimentum. Integer semper a felis eu scelerisque. Phasellus viverra sollicitudin justo nec vestibulum.'
+            },
+            ]
+
+            for (let i = 0; i < 3; i++) {
+                document.getElementById(`student${i + 1}`).innerHTML = testimonialArr[i + 3].name
+                document.getElementById(`position${i + 1}`).innerHTML = testimonialArr[i + 3].position
+                document.getElementById(`text${i + 1}`).innerHTML = testimonialArr[i + 3].text
+            }
+            const change1 = () => {
+                for (let i = 0; i < 3; i++) {
+                    document.getElementById(`student${i + 1}`).innerHTML = testimonialArr[i].name
+                    document.getElementById(`position${i + 1}`).innerHTML = testimonialArr[i].position
+                    document.getElementById(`text${i + 1}`).innerHTML = testimonialArr[i].text
+                }
+            }
+            const change2 = () => {
+                const test = document.querySelectorAll('.testimonial')
+                for (let i = 0; i < test.length; i++) {
+                    test[i].classList.add('testimonial__animated')
+                }
+
+
+
+                for (let i = 0; i < 3; i++) {
+                    document.getElementById(`student${i + 1}`).innerHTML = testimonialArr[i + 3].name
+                    document.getElementById(`position${i + 1}`).innerHTML = testimonialArr[i + 3].position
+                    document.getElementById(`text${i + 1}`).innerHTML = testimonialArr[i + 3].text
+                }
+
+            }
+            const change3 = () => {
+                for (let i = 0; i < 3; i++) {
+                    document.getElementById(`student${i + 1}`).innerHTML = testimonialArr[i + 6].name
+                    document.getElementById(`position${i + 1}`).innerHTML = testimonialArr[i + 6].position
+                    document.getElementById(`text${i + 1}`).innerHTML = testimonialArr[i + 6].text
+                }
+            }
+        </script>
+    </section>
+    <section class='partners'>
+        <h2>Lorem ipsum dolor sit amet consectetur</h2>
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <img src='./images/partners/Virgin.png' alt='Virgin Mobile' />
+                    </li>
+                    <li class="glide__slide">
+                        <img src='./images/partners/Majid.png' alt='Majid Al Futtaim' />
+                    </li>
+                    <li class="glide__slide">
+                        <img src='./images/partners/ADNOC.png' alt='ADNOC' />
+                    </li>
+                    <li class="glide__slide">
+                        <img src='./images/partners/Carrefour.png' alt='Carrefour' />
+                    </li>
+                    <li class="glide__slide">
+                        <img src='./images/partners/Etisalat.png' alt='Etisalat' />
+                    </li>
+                    <li class="glide__slide">
+                        <img src='./images/partners/Philips.png' alt='Philips' />
+                    </li>
+                    <li class="glide__slide">
+                        <img src='./images/partners/Zomato.png' alt='Zomato' />
+                    </li>
+                    <li class="glide__slide">
+                        <img src='./images/partners/KPMG.png' alt='KPMG' />
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            new Glide('.glide', {
+                type: 'carousel',
+                startAt: 0,
+                perView: 6,
+                autoplay: 2000,
+                breakpoints: {
+                    1024: {
+                        perView: 2
+                    },
+                    600: {
+                        perView: 1
+                    }
+                }
+            }).mount()
+        </script>
+    </section>
+    <section class='promo'>
+        <div class='promo__img-container'>
+            <div class='promo__img-wrapper'>
+                <img src='./images/Class.png' alt='Live Class' />
+            </div>
+        </div>
+        <article class='promo-content'>
+            <h1>Take charge of your career with our 2 months coding bootcamp</h1>
+            <button class='btn btn-primary'>Sign up</button>
+            <p class='blue-accent'>Money-back guarantee</p>
+            <ul>
+                <li>
+                    <i class="bi bi-check2"></i>Get a tech job
+                </li>
+                <li>
+                    <i class="bi bi-check2"></i>Build your full stack portfolio
+                </li>
+                <li>
+                    <i class="bi bi-check2"></i>Launch your own apps
+                </li>
+                <li>
+                    <i class="bi bi-check2"></i>Stay up to date with the latest coding trends
+                </li>
+            </ul>
+        </article>
+
+    </section>
+    <section class='faq'>
+        <h1>Frequently asked questions</h1>
+        <article class='faq-content box-shadow-light'>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            <h5>Where will the program be conducted?</h5>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                            This coding bootcamp will be conducted online live fully remotely (over Zoom and our own
+                            Learning Management portal).
+                            Our sessions blend practical knowledge with live coding to ensure that you learn by doing!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            <h5>Will I have access to online materials and recordings?</h5>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec aliquet sem.
+                            Mauris rhoncus non est et
+                            vestibulum. Quisque auctor vulputate ligula. Donec placerat metus diam, eget gravida justo
+                            finibus sed. Sed lacus metus,
+                            iaculis a hendrerit in, suscipit sit amet ipsum. Maecenas imperdiet, ex in scelerisque
+                            maximus, libero libero tempor
+                            nibh, vel venenatis eros magna et nibh. Vestibulum non ornare felis.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            <h5>What certifications will I get?</h5>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            Duis commodo tellus ut tortor sagittis vulputate. Suspendisse quis diam aliquet, mattis
+                            magna non, viverra mi. Maecenas
+                            dignissim mauris tortor, sit amet bibendum lacus dapibus vel. Pellentesque sit amet
+                            ullamcorper neque, ut fringilla
+                            nisl. Maecenas ac urna accumsan, efficitur dolor sed, efficitur neque. Vestibulum tincidunt
+                            luctus imperdiet
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseFour">
+                            <h5>Will this help me land a job?</h5>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingFour">
+                        <div class="accordion-body">
+                            Aenean sollicitudin finibus elit ut faucibus. Pellentesque fermentum feugiat sem, sit amet
+                            euismod risus aliquet non.
+                            Vivamus posuere sapien quis magna dapibus, ac ullamcorper turpis feugiat. Sed malesuada
+                            maximus auctor. Nulla egestas
+                            sollicitudin pretium. Fusce sed odio sed lacus scelerisque placerat ac eget nisl. Mauris sit
+                            amet nibh a turpis rutrum
+                            bibendum vitae auctor massa. Pellentesque in maximus tellus. Quisque orci est, volutpat ut
+                            nulla sit amet, fringilla
+                            iaculis quam.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseFive">
+                            <h5>Is this bootcamp beginner friendly?</h5>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingFive">
+                        <div class="accordion-body">
+                            In hac habitasse platea dictumst. Aenean sit amet tincidunt nisl. Quisque condimentum ante a
+                            egestas posuere. Duis eget
+                            semper nisl. Suspendisse malesuada auctor sem ac pellentesque. Phasellus quis tellus
+                            imperdiet, dapibus urna eget,
+                            tincidunt purus. Nullam vel ante et nisl commodo accumsan vel vel lorem. Duis mollis mattis
+                            ante id ultrices. Sed eget
+                            metus nec nulla egestas mollis bibendum quis diam.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseSix">
+                            <h5>What kind of laptop will I need?</h5>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            Fusce venenatis consectetur eros, id iaculis nulla ultrices id. Nam neque turpis, imperdiet
+                            id euismod vel, blandit
+                            tincidunt tortor. Maecenas facilisis a quam quis dapibus. Nunc non tincidunt velit. Fusce
+                            semper risus at turpis rhoncus
+                            efficitur.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseSeven">
+                            <h5> What if I have other questions?</h5>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingSeven">
+                        <div class="accordion-body">
+                            Vestibulum sit amet vehicula nisl. Fusce ullamcorper elit at dui auctor semper. Pellentesque
+                            habitant morbi tristique
+                            senectus et netus et malesuada fames ac turpis egestas. Etiam leo nunc, placerat sit amet
+                            ullamcorper quis, mattis eget
+                            nisl. Vivamus sagittis vehicula magna ac ullamcorper.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!--Module3 Modal. -->
+    <div class="modal fade " id="module3Modal" tabindex="-1" aria-labelledby="module3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content module3">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div>
+                        <p class="modal-title gray-text" id="module3ModalLabel">module 3</p><br />
+                        <h1 class='blue-accent modal-title'>Javascript & Python Programming</h1>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class='row'>
+                        <div class='col-4 light-gray-bg'>
+                            <div class='module3-title'>The Basics of Javascript</div>
+                        </div>
+                        <div class='col-8 dark-gray-bg'>
+                            <div class='module3-desc'>Learn the basics of Javascript with Strings, Variables, Objects,
+                                Arrays, Loops, Map functions, ES6 and more!</div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-4 dark-gray-bg'>
+                            <div class='module3-title'>Intro to Python</div>
+                        </div>
+                        <div class='col-8 light-gray-bg'>
+                            <div class='module3-desc'>Variables and Data Types Lists & Loops, Dictionaries and Frequency
+                                Tables Functions Algorithm Practice
+                            </div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-4 light-gray-bg'>
+                            <div class='module3-title'>New ES6 syntax</div>
+                        </div>
+                        <div class='col-8 dark-gray-bg'>
+                            <div class='module3-desc'>Learn about new ES6 syntax (Let, Const) and Arrow Functions</div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-4 dark-gray-bg'>
+                            <div class='module3-title'>Intro to Data Science</div>
+                        </div>
+                        <div class='col-8 light-gray-bg'>
+                            <div class='module3-desc'>Basics of Data Science to Solve Problems using Programming,
+                                Mathematics and Domain Knowledge</div>
+                        </div>
+                    </div>
+                </div>
+                <div class='module3-footer'>
+                    <button type="button" class="btn btn-primary">Enroll now</button>
+                    <p class='blue-accent'>30 day money back guarantee</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Course1 Modal. -->
+    <div class="modal fade " id="course1Modal" tabindex="-1" aria-labelledby="course1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content course1">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div>
+                        <h1 class='blue-accent modal-title id="course1ModalLabel"'>March 31 - May 22</h1>
+                        <div class='course1-info'>
+                            <div class='course1-info__location'>
+                                <div class='course-info__icon-wrapper'><img src='./images/icons/Location.png'
+                                        alt='Location' /></div>
+                                <p>Online Live & AstroLabs Dubai (JLT, Dubai) </p>
+                            </div>
+                            <div class='course1-info__time'>
+                                <div class='course-info__icon-wrapper'><img src='./images/icons/Time.png' alt='Time' />
+                                </div>
+                                <p>Saturday 10am-4pm, Monday & Wednesday 6:30-9pm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class='row'>
+                        <div class='col-10 '>
+                            <h4>Date</h4>
+                        </div>
+                        <div class='col-2 '>
+                            <h4>Timing</h4>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-10 light-gray-bg'>
+                            Start of Introduction to Coding - Wednesday, March 31
+                        </div>
+                        <div class='col-2 dark-gray-bg'>
+                            6:30pm-9:30pm
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-10 dark-gray-bg'>
+                            HTML, CSS and No Code Solutions - Saturday, April 3
+                        </div>
+                        <div class='col-2 light-gray-bg'>
+                            6:30pm-9:30pm
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-10 light-gray-bg'>
+                            GitHub and the terminal - Monday, April 5
+                        </div>
+                        <div class='col-2 dark-gray-bg'>
+                            6:30pm-9:30pm
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-10 dark-gray-bg'>
+                            Building Your Portfolio and hosting it using Netlify - Wednesday, April 7
+                        </div>
+                        <div class='col-2 light-gray-bg'>
+                            6:30pm-9:30pm
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-10 light-gray-bg'>
+                            Learning JavaScript - Saturday, April 10
+                        </div>
+                        <div class='col-2 dark-gray-bg'>
+                            6:30pm-9:30pm
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-10 dark-gray-bg'>
+                            JavaScript Data Structures and Algorithms - Monday, April 12
+                        </div>
+                        <div class='col-2 light-gray-bg'>
+                            6:30pm-9:30pm
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-10 light-gray-bg'>
+                            Advanced Algorithms - Wednesday, April 14
+                        </div>
+                        <div class='col-2 dark-gray-bg'>
+                            6:30pm-9:30pm
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-10 dark-gray-bg'>
+                            Intro to Python - Saturday, April 17
+                        </div>
+                        <div class='col-2 light-gray-bg'>
+                            6:30pm-9:30pm
+                        </div>
+                    </div>
+                </div>
+                <div class='module3-footer'>
+                    <button type="button" class="btn btn-primary">Enroll now</button>
+                    <p class='blue-accent'>30 day money back guarantee</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
