@@ -1,9 +1,10 @@
-:root {
-  --blue-accent-color: #204e9f;
-  --gray-accent-color: #ebeaed;
-  --gray-text: #151439;
-  --white-background: #ffffff;
-  --lightgray-background: #f8f8f8;
+@font-face {
+  font-family: "BrownBold";
+  src: url("../fonts/Brown\ Bold.ttf");
+  src: url("../fonts/Brown\ Bold.ttf'") format("ttf");
+}
+body {
+  font-family: "BrownBold";
 }
 .section-padding {
   padding: 5rem;

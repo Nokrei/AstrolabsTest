@@ -99,33 +99,33 @@
         console.log(foo);
 
     </script>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id='navbar'>
+    <nav class="navbar navbar-expand-lg navbar-light" id='navbar'>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Overview</a>
+                    <a class="nav-link" aria-current="page" href="#overview">Overview</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Content </a>
+                    <a class="nav-link" href="#content">Content </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="#pricing">Pricing</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Instructors</a>
+                    <a class="nav-link" href="#instructors">Instructors</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Schedules</a>
+                    <a class="nav-link" href="#schedules">Schedules</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Our Alumni</a>
+                    <a class="nav-link" href="#alumni">Our Alumni</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">FAQ's</a>
+                    <a class="nav-link" href="#FAQ">FAQ's</a>
                 </li>
     </nav>
     <!-- Script for the navBar. -->
@@ -139,7 +139,7 @@
             window.pageYOffset >= sticky ? navBar.classList.add('sticky') : navBar.classList.remove('sticky')
         }
     </script>
-    <section class='overview section-padding'>
+    <section class='overview section-padding' id='overview'>
         <article class='overview__learn'>
             <div class='overview__learn--text-container'>
                 <div class='overview__learn--desc'>
@@ -200,7 +200,7 @@
             </div>
         </article>
     </section>
-    <section class='content section-padding'>
+    <section class='content section-padding' id='content'>
         <article class='content__general'>
             <h1>What you'll learn</h1>
             <p>Practical, project-based knowledge to build and launch your full-stack <br />
@@ -450,7 +450,7 @@
             </div>
         </article>
     </section>
-    <section class='instructors section-padding'>
+    <section class='instructors section-padding' id='instructors'>
         <article class='instructors__title'>
             <h1>Meet Your Instructors</h1>
             <h4>Expert practitioners that teach paractical knowledge you can immediately implement</h4>
@@ -564,7 +564,7 @@
         </article>
 
     </section>
-    <section class='courses background-light section-padding'>
+    <section class='courses background-light section-padding' id='schedules'>
         <article class='courses-title'>
             <h1>Upcoming courses</h1>
         </article>
@@ -644,7 +644,7 @@
             </div>
         </article>
     </section>
-    <section class='pricing section-padding'>
+    <section class='pricing section-padding' id='pricing'>
         <h1>Fess and payment options</h1>
         <article class='pricing-options'>
             <div class='row'>
@@ -715,7 +715,7 @@
             </div>
         </article>
     </section>
-    <section class='alumni section-padding'>
+    <section class='alumni section-padding' id='alumni'>
         <article class='alumni-info'>
             <h1>Our alumni</h1>
             <h4>Our graduates are from big companies, small companies, they are founders, career <br /> changers and
@@ -965,7 +965,7 @@
         </article>
 
     </section>
-    <section class='faq section-padding'>
+    <section class='faq section-padding' id='FAQ'>
         <h1>Frequently asked questions</h1>
         <article class='faq-content box-shadow-light'>
             <div class="accordion" id="accordionPanelsStayOpenExample">

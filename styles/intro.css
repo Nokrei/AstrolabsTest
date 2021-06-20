@@ -53,9 +53,31 @@
 .navbar {
   z-index: 99999;
   margin-bottom: 5rem;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
+.navbar ul {
+  margin: auto;
+  justify-content: left;
+  width: 100%;
+  padding-left: 1rem;
+}
+.navbar li {
+  align-self: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
 @media screen and (max-width: 800px) {
   .bootcamp-info__buttons {
     display: grid;
+  }
+  .navbar ul {
+    padding-left: 0;
+  }
+  .navbar li {
+    padding: 0;
   }
 }
