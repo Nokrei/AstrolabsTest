@@ -1,6 +1,3 @@
-.content {
-  padding: 5rem 5rem 0 5rem;
-}
 .content__general {
   text-align: center;
 }
@@ -83,4 +80,34 @@
 .audience__image-container img {
   height: auto;
   width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .module {
+    min-width: 60%;
+  }
+  .col-custom {
+    display: grid;
+  }
+  .text-vertical {
+    writing-mode: initial;
+    transform: none;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .included,
+  .audience {
+    text-align: center;
+  }
+  .included-feature {
+    min-width: 60%;
+  }
+  .included__group {
+    display: grid;
+    justify-items: center;
+    margin-top: 1rem;
+  }
+
+  .audience__image-wrapper {
+    min-width: 90%;
+  }
 }

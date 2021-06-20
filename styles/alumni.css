@@ -1,5 +1,4 @@
 .alumni {
-  padding: 5rem;
   text-align: center;
 }
 .alumni-info {
@@ -35,4 +34,16 @@
 }
 .alumni-content .form-check-input {
   cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+  .testimonial-wraper {
+    min-width: 80%;
+  }
+  .testimonial {
+    padding-bottom: 1rem;
+  }
+  .testimonial__text {
+    padding-bottom: 0;
+    min-height: 0;
+  }
 }

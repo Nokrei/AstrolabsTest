@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap CSS. -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> -->
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <!-- Glide JS Required Core Stylesheet. -->
     <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
     <!-- Glide JS Optional Theme Stylesheet. -->
@@ -43,7 +43,7 @@
 
 <body>
 
-    <section class='intro'>
+    <section class='intro section-padding'>
         <article class='bootcamp-info'>
             <section class='bootcamp-info__introduction'>
                 <p>open academy / coding</p>
@@ -59,7 +59,7 @@
                 <div class='bootcamp-info__details--calendar'>
                     <i class="bi bi-calendar4-week"></i>
                     <span class='bootcamp-info__details--text' id='date'>10 Aug 21 - 21 Aug 21</span>
-                    <button class='btn btn-custom-color btn-sm'>
+                    <button class='btn btn-primary btn-sm'>
                         9 days left</button>
                 </div>
                 <div class='bootcamp-info__details--location'>
@@ -139,7 +139,7 @@
             window.pageYOffset >= sticky ? navBar.classList.add('sticky') : navBar.classList.remove('sticky')
         }
     </script>
-    <section class='overview'>
+    <section class='overview section-padding'>
         <article class='overview__learn'>
             <div class='overview__learn--text-container'>
                 <div class='overview__learn--desc'>
@@ -158,10 +158,10 @@
                     </ul>
                 </div>
             </div>
-
-            <iframe src="https://www.youtube.com/embed/O-IcGDkLNH8">
-            </iframe>
-
+            <div class='iframe-wrapper'>
+                <iframe src="https://www.youtube.com/embed/O-IcGDkLNH8">
+                </iframe>
+            </div>
 
         </article>
         <article class='overview__course'>
@@ -200,7 +200,7 @@
             </div>
         </article>
     </section>
-    <section class='content'>
+    <section class='content section-padding'>
         <article class='content__general'>
             <h1>What you'll learn</h1>
             <p>Practical, project-based knowledge to build and launch your full-stack <br />
@@ -361,7 +361,7 @@
         <article class='included'>
             <h2>What is included?</h2>
             <div class='row '>
-                <div class=' col'>
+                <div class=' col included-feature'>
                     <div class='included__group'>
                         <div class='included__group--image'><img src='./images/icons/Camera.png' alt='Camera'></div>
 
@@ -370,14 +370,14 @@
                         </div>
                     </div>
                 </div>
-                <div class='col'>
+                <div class='col included-feature'>
                     <div class='included__group'>
                         <div class='included__group--image'><img src='./images/icons/Calendar.png' alt='Calendar'></div>
                         <div class='included__group--text'>Weekly office hours with instructors and mentors to progress
                             your projects</div>
                     </div>
                 </div>
-                <div class='col'>
+                <div class='col included-feature'>
                     <div class='included__group'>
                         <div class='included__group--image'><img src='./images/icons/Avatar.png' alt='Avatar'></div>
                         <div class='included__group--text'>A vibrant alumni community of the largest number of coding
@@ -387,14 +387,14 @@
                 </div>
             </div>
             <div class='row '>
-                <div class='col'>
+                <div class='col included-feature'>
                     <div class='included__group'>
                         <div class='included__group--image'><img src='./images/icons/OK.png' alt='OK'></div>
                         <div class='included__group--text'>Interactive demo day at the end of the course with votes for
                             the winner and prizes!</div>
                     </div>
                 </div>
-                <div class='col'>
+                <div class='col included-feature'>
                     <div class='included__group'>
                         <div class='included__group--image'><img src='./images/icons/Bolt.png' alt='Bolt'></div>
                         <div class='included__group--text'>Online community forum to troubleshoot, learn and chat with
@@ -402,7 +402,7 @@
                         </div>
                     </div>
                 </div>
-                <div class='col'>
+                <div class='col included-feature'>
                     <div class='included__group'>
                         <div class='included__group--image'><img src='./images/icons/Tags.png' alt='Tags'></div>
                         <div class='included__group--text'>Over 100 hours of instruction and mentorship</div>
@@ -442,7 +442,7 @@
                         </div>
                     </div>
                 </div>
-                <div class='col my-auto'>
+                <div class='col my-auto audience__image-wrapper '>
                     <div class='audience__image-container'>
                         <img src='./images/Students.png' alt='Students'>
                     </div>
@@ -450,7 +450,7 @@
             </div>
         </article>
     </section>
-    <section class='instructors'>
+    <section class='instructors section-padding'>
         <article class='instructors__title'>
             <h1>Meet Your Instructors</h1>
             <h4>Expert practitioners that teach paractical knowledge you can immediately implement</h4>
@@ -564,7 +564,7 @@
         </article>
 
     </section>
-    <section class='courses background-light'>
+    <section class='courses background-light section-padding'>
         <article class='courses-title'>
             <h1>Upcoming courses</h1>
         </article>
@@ -586,7 +586,8 @@
                             </div>
                         </div>
 
-                        <div class='course__buttons'><button class='btn btn-primary'>Sign up</button>
+                        <div class='course__buttons'>
+                            <button class='btn btn-primary'>Sign up</button>
                             <a href='#' data-bs-toggle="modal" data-bs-target="#course1Modal">See
                                 Schedule</a>
                         </div>
@@ -643,7 +644,7 @@
             </div>
         </article>
     </section>
-    <section class='pricing'>
+    <section class='pricing section-padding'>
         <h1>Fess and payment options</h1>
         <article class='pricing-options'>
             <div class='row'>
@@ -714,7 +715,7 @@
             </div>
         </article>
     </section>
-    <section class='alumni'>
+    <section class='alumni section-padding'>
         <article class='alumni-info'>
             <h1>Our alumni</h1>
             <h4>Our graduates are from big companies, small companies, they are founders, career <br /> changers and
@@ -725,7 +726,7 @@
         </article>
         <artcile class='alumni-content'>
             <div class='row'>
-                <div class='col'>
+                <div class='col testimonial-wraper'>
                     <div class='testimonial'>
                         <div class='testimonial__text'>
                             <p id='text1'>The Astrolabs part-time Coding bootcamp is focused and current, teaching
@@ -743,7 +744,7 @@
                         </div>
                     </div>
                 </div>
-                <div class='col'>
+                <div class='col testimonial-wraper'>
                     <div class='testimonial'>
                         <div class='testimonial__text'>
                             <p id='text2'>The Astrolabs part-time Coding bootcamp is focused and current, teaching
@@ -764,7 +765,7 @@
                         </div>
                     </div>
                 </div>
-                <div class='col'>
+                <div class='col testimonial-wraper'>
                     <div class='testimonial'>
                         <div class='testimonial__text'>
                             <p id='text3'>The Astrolabs part-time Coding bootcamp is focused and current, teaching
@@ -888,7 +889,7 @@
             }
         </script>
     </section>
-    <section class='partners'>
+    <section class='partners section-padding'>
         <h2>Lorem ipsum dolor sit amet consectetur</h2>
         <div class="glide">
             <div class="glide__track" data-glide-el="track">
@@ -937,7 +938,7 @@
             }).mount()
         </script>
     </section>
-    <section class='promo'>
+    <section class='promo '>
         <div class='promo__img-container'>
             <div class='promo__img-wrapper'>
                 <img src='./images/Class.png' alt='Live Class' />
@@ -964,7 +965,7 @@
         </article>
 
     </section>
-    <section class='faq'>
+    <section class='faq section-padding'>
         <h1>Frequently asked questions</h1>
         <article class='faq-content box-shadow-light'>
             <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -1113,7 +1114,7 @@
     </section>
     <!--Module3 Modal. -->
     <div class="modal fade " id="module3Modal" tabindex="-1" aria-labelledby="module3ModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
             <div class="modal-content module3">
                 <div class="modal-header">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1169,7 +1170,7 @@
     </div>
     <!--Course1 Modal. -->
     <div class="modal fade " id="course1Modal" tabindex="-1" aria-labelledby="course1ModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
             <div class="modal-content course1">
                 <div class="modal-header">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1191,74 +1192,74 @@
                 </div>
                 <div class="modal-body">
                     <div class='row'>
-                        <div class='col-10 '>
+                        <div class='col-9 '>
                             <h4>Date</h4>
                         </div>
-                        <div class='col-2 '>
+                        <div class='col-3 '>
                             <h4>Timing</h4>
                         </div>
                     </div>
                     <div class='row'>
-                        <div class='col-10 light-gray-bg'>
+                        <div class='col-9 light-gray-bg'>
                             Start of Introduction to Coding - Wednesday, March 31
                         </div>
-                        <div class='col-2 dark-gray-bg'>
+                        <div class='col-3 dark-gray-bg'>
                             6:30pm-9:30pm
                         </div>
                     </div>
                     <div class='row'>
-                        <div class='col-10 dark-gray-bg'>
+                        <div class='col-9 dark-gray-bg'>
                             HTML, CSS and No Code Solutions - Saturday, April 3
                         </div>
-                        <div class='col-2 light-gray-bg'>
+                        <div class='col-3 light-gray-bg'>
                             6:30pm-9:30pm
                         </div>
                     </div>
                     <div class='row'>
-                        <div class='col-10 light-gray-bg'>
+                        <div class='col-9 light-gray-bg'>
                             GitHub and the terminal - Monday, April 5
                         </div>
-                        <div class='col-2 dark-gray-bg'>
+                        <div class='col-3 dark-gray-bg'>
                             6:30pm-9:30pm
                         </div>
                     </div>
                     <div class='row'>
-                        <div class='col-10 dark-gray-bg'>
+                        <div class='col-9 dark-gray-bg'>
                             Building Your Portfolio and hosting it using Netlify - Wednesday, April 7
                         </div>
-                        <div class='col-2 light-gray-bg'>
+                        <div class='col-3 light-gray-bg'>
                             6:30pm-9:30pm
                         </div>
                     </div>
                     <div class='row'>
-                        <div class='col-10 light-gray-bg'>
+                        <div class='col-9 light-gray-bg'>
                             Learning JavaScript - Saturday, April 10
                         </div>
-                        <div class='col-2 dark-gray-bg'>
+                        <div class='col-3 dark-gray-bg'>
                             6:30pm-9:30pm
                         </div>
                     </div>
                     <div class='row'>
-                        <div class='col-10 dark-gray-bg'>
+                        <div class='col-9 dark-gray-bg'>
                             JavaScript Data Structures and Algorithms - Monday, April 12
                         </div>
-                        <div class='col-2 light-gray-bg'>
+                        <div class='col-3 light-gray-bg'>
                             6:30pm-9:30pm
                         </div>
                     </div>
                     <div class='row'>
-                        <div class='col-10 light-gray-bg'>
+                        <div class='col-9 light-gray-bg'>
                             Advanced Algorithms - Wednesday, April 14
                         </div>
-                        <div class='col-2 dark-gray-bg'>
+                        <div class='col-3 dark-gray-bg'>
                             6:30pm-9:30pm
                         </div>
                     </div>
                     <div class='row'>
-                        <div class='col-10 dark-gray-bg'>
+                        <div class='col-9 dark-gray-bg'>
                             Intro to Python - Saturday, April 17
                         </div>
-                        <div class='col-2 light-gray-bg'>
+                        <div class='col-3 light-gray-bg'>
                             6:30pm-9:30pm
                         </div>
                     </div>

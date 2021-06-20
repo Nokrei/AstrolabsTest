@@ -1,6 +1,3 @@
-.faq {
-  padding: 5rem;
-}
 .faq h1 {
   text-align: center;
   padding-bottom: 3rem;
@@ -10,4 +7,9 @@
 }
 .accordion {
   font-weight: bold;
+}
+@media screen and (max-width: 800px) {
+  .faq-content {
+    padding: 0.5rem;
+  }
 }

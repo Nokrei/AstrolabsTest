@@ -44,3 +44,22 @@
 .promo-content ul li i {
   padding-right: 0.5rem;
 }
+@media screen and (max-width: 800px) {
+  .promo-content {
+    padding: 3rem 2rem 5rem 2rem;
+    background-color: #f8f8f8;
+    text-align: center;
+  }
+  .promo-content ul {
+    padding: 0;
+  }
+  .promo-content ul li {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    text-align: left;
+    padding-bottom: 1rem;
+  }
+  .promo-content ul li:not(:first-of-type) {
+    padding-left: 0;
+  }
+}
