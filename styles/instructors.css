@@ -5,6 +5,10 @@
   border: 2px solid var(--gray-accent-color);
   border-radius: 2%;
 }
+.instructors__content {
+  max-width: 80%;
+  margin: auto;
+}
 .instructor-right {
   margin: auto 0 2rem auto;
 }
@@ -25,4 +29,9 @@
 }
 .instructor__desc {
   font-weight: bold;
+}
+@media screen and (max-width: 800px) {
+  .instructors__content {
+    max-width: 90%;
+  }
 }

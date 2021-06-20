@@ -35,3 +35,12 @@
   color: #02a959;
   margin-right: 1rem;
 }
+.option button {
+  font-weight: bold;
+  width: 10rem;
+}
+@media screen and (max-width: 800px) {
+  .option {
+    padding-bottom: 3rem;
+  }
+}

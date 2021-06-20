@@ -4,8 +4,11 @@
 
 /* make changes to the !default Bootstrap variables */
 $primary: #204e9f;
+$light: rgb(248, 248, 248);
+
 $theme-colors: (
   "primary": $primary,
+  "light": $light,
 );
 /* finally, import Bootstrap to set the changes! */
 @import "../node_modules//bootstrap/scss/bootstrap.scss";

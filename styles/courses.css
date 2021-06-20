@@ -43,4 +43,10 @@
   .courses-content {
     width: 100%;
   }
+  .course__dates {
+    text-align: center;
+  }
+  .course {
+    width: 20rem;
+  }
 }

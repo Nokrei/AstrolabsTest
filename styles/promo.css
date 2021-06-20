@@ -27,6 +27,7 @@
 }
 .promo-content p {
   padding-top: 0.5rem;
+  padding-bottom: 1rem;
   font-weight: bold;
 }
 .promo-content ul {
@@ -43,6 +44,11 @@
 }
 .promo-content ul li i {
   padding-right: 0.5rem;
+}
+.promo-content button {
+  margin-top: 1rem;
+  width: 15rem;
+  height: 3.5rem;
 }
 @media screen and (max-width: 800px) {
   .promo-content {

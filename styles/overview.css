@@ -1,5 +1,6 @@
 .overview {
   width: 100%;
+  font-weight: bold;
 }
 .overview__learn {
   display: grid;

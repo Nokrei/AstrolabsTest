@@ -1,3 +1,6 @@
+.content {
+  font-weight: bold;
+}
 .content__general {
   text-align: center;
 }
