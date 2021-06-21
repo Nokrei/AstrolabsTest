@@ -17,8 +17,14 @@ can be found in /styles/instructors.css .
 - The general look of the App seams to be too bright and lacking contrast between elements - colors taken from Figma design.
 ### JavaScript
 - Navigation Bar transition to Hamburger Menu handled by Bootstrap
-- Navigation Bar made sticky to top of the page when scrolling to it achieved by vanilla JS - <script> located under <nav> section
-- <script> for dynamic handling of days left till next course can be found under the .intro section - NOT YET FINISHED
+- Navigation Bar made sticky to top of the page when scrolling to it achieved by vanilla JS - `script` located under `nav` section
+- `script` for dynamic handling of days left till next course can be found under the .intro section. It compares the current day `currentDay` and current month `currentMonth`
+  with the values in `.daysLeft`. The `monthList` array of objects contains a list of all the months and their lengths, and the comparison of `month` and `currentMonth`
+  despite them being different types (string and number) is allowed thanks to a `.map` function. 
+  An if / else chain replaces the `innerHTML` of `.daysLeft` accordingly and provides three potential outcomes: 
+  - display days left till the course if it starts this month or the next (takes into account varying month lengths, but not leap years)
+  - if the course starts in the month following the next one (ie next month is Jul and course starts in Aug): display 'More than a month.'
+  - if the starting date of the course is in the past: display 'Already Started'!
 - Alumni section made interactive with vanilla JS - <script> can be found inside the .alumni section. All the alumni along with relevant information are stored in 
   `testimonialArr` array of objects. Initially the 'middle' of the array populates the relevant div's innerHTML. Upon user selection of radio button an `onclick` event
   is executed that triggers `change` and `addAnim` functions that set the innerHTML accordingly and start a fade in animation. Upon mouse leave of the radio button area,
