@@ -35,7 +35,6 @@
     <link rel='stylesheet' href='./styles/promo.css' />
     <link rel='stylesheet' href='./styles/faq.css' />
     <link rel='stylesheet' href='./styles/modal.css' />
-
     <title>Astrolabs</title>
     <!-- Bootstrap Script. -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
@@ -64,12 +63,12 @@
                 <div class='bootcamp-info__details--calendar'>
                     <i class="bi bi-calendar4-week"></i>
                     <div class='bootcamp-info__details--text'>
-                        <span id='date'>25 Jun 21 - 30 Jun 21</span>
+                        <span id='date'>10 Jul 21 - 30 Jul 21</span>
                         <p><a href='#'>See schedule</a></p>
                     </div>
                     <div>
                         <button class='btn btn-primary btn-sm'>
-                            9 days left</button>
+                            <span id='daysLeft'><span id='daysLeftNumber'>9</span> days left</span></button>
                     </div>
 
                 </div>
@@ -97,12 +96,14 @@
             <a href='#' rel='noreferrer noopener'>Request a call back</a>
         </article>
     </section>
+    <!-- Script for dynamic handling of days left till next course, not finished yet. -->
     <script>
         const currentMonth = new Date().getMonth() + 1
         const currentDay = new Date().getDate()
-        const bar = document.getElementById('date').innerHTML.slice(0, 7).split(' ')
-        const day = parseFloat(bar[0])
-        const monthString = bar[1]
+        const getDay = document.getElementById('date').innerHTML.slice(0, 7).split(' ')
+        const day = parseFloat(getDay[0])
+        const monthString = getDay[1]
+        let currentMonthDays = null
         let month = null
         const monthList = [{
             month: 'Jan',
@@ -156,15 +157,26 @@
 
         ]
         monthList.map((item) => {
-            return item.month === monthString ? month = monthList.indexOf(item) + 1 : null
+            return (item.month === monthString ? month = monthList.indexOf(item) + 1 : null,
+                monthList.indexOf(item) + 1 === currentMonth ? currentMonthDays = item.days : null
+            )
         })
 
-        let daysLeft = null
+        let daysLeftNumber = null
 
-        if (currentMonth - month === 0) {
-            daysLeft = day - currentDay
+        if (month - currentMonth === 0) {
+            daysLeftNumber = day - currentDay
+            document.getElementById('daysLeftNumber').innerHTML = daysLeftNumber
+        } else if (month - currentMonth < 0) {
+            document.getElementById('daysLeft').innerHTML = 'Already started!'
+        } else if (month - currentMonth === 1) {
+            daysLeftNumber = currentMonthDays - currentDay + day
+            document.getElementById('daysLeftNumber').innerHTML = daysLeftNumber
+        } else if (month - currentMonth > 1) {
+            document.getElementById('daysLeft').innerHTML = 'More than a month.'
         }
-        console.log(daysLeft);
+
+
 
     </script>
     <nav class="navbar navbar-expand-lg navbar-light" id='navbar'>
