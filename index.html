@@ -164,8 +164,12 @@
         let daysLeftNumber = null
 
         if (month - currentMonth === 0) {
-            daysLeftNumber = day - currentDay
-            document.getElementById('daysLeftNumber').innerHTML = daysLeftNumber
+            if (day - currentDay > 1) {
+                daysLeftNumber = day - currentDay
+                document.getElementById('daysLeftNumber').innerHTML = daysLeftNumber
+            } else {
+                document.getElementById('daysLeft').innerHTML = 'Already started!'
+            }
         } else if (month - currentMonth < 0) {
             document.getElementById('daysLeft').innerHTML = 'Already started!'
         } else if (month - currentMonth === 1) {
