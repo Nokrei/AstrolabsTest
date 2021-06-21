@@ -96,7 +96,7 @@
             <a href='#' rel='noreferrer noopener'>Request a call back</a>
         </article>
     </section>
-    <!-- Script for dynamic handling of days left till next course, not finished yet. -->
+    <!-- Script for dynamic handling of days left till next course -->
     <script>
         const currentMonth = new Date().getMonth() + 1
         const currentDay = new Date().getDate()
@@ -161,7 +161,6 @@
                 monthList.indexOf(item) + 1 === currentMonth ? currentMonthDays = item.days : null
             )
         })
-
         let daysLeftNumber = null
 
         if (month - currentMonth === 0) {
@@ -175,9 +174,6 @@
         } else if (month - currentMonth > 1) {
             document.getElementById('daysLeft').innerHTML = 'More than a month.'
         }
-
-
-
     </script>
     <nav class="navbar navbar-expand-lg navbar-light" id='navbar'>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
