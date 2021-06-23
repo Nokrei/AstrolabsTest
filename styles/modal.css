@@ -35,6 +35,7 @@
 /*  styling for course1 modal  */
 .course1 {
   font-weight: bold;
+  transform: scale(0.8);
 }
 .course1-info,
 .course1-info__location,
@@ -58,7 +59,6 @@
   margin-bottom: 0.2rem;
 }
 @media screen and (max-width: 800px) {
-  .course1,
   .module3 {
     transform: scale(0.8);
   }
