@@ -23,6 +23,9 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   position: relative;
 }
+.module p:last-of-type {
+  padding-bottom: 2rem;
+}
 .module a {
   position: absolute;
   bottom: 2rem;
