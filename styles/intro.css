@@ -7,23 +7,39 @@
   align-content: center;
   font-weight: bold;
 }
-.bootcamp-info {
-}
 
 .bootcamp-info__introduction p:first-of-type {
   text-transform: uppercase;
+}
+.bootcamp-info__introduction h1 {
+  font-size: 3rem;
+  font-weight: bold;
 }
 .bootcamp-info__introduction p {
   font-size: 1.2rem;
 }
 .bootcamp-info__introduction p:first-of-type {
   font-size: 1rem;
+  font-weight: bold;
 }
-
+.bootcamp-info__introduction p:nth-of-type(2) {
+  padding: 1rem 0;
+}
+.bootcamp-info__introduction p:last-of-type {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.bootcamp-info__introduction span {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  padding: 0.1rem 0.5rem;
+  background-color: #3eedbf;
+}
 .bootcamp-info__details {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
   row-gap: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 .bootcamp-info__details--text {
@@ -77,6 +93,9 @@
 }
 
 @media screen and (max-width: 800px) {
+  .bootcamp-info__introduction {
+    text-align: center;
+  }
   .bootcamp-info__buttons {
     display: grid;
   }

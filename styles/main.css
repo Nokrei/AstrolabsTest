@@ -7,15 +7,14 @@
 }
 @font-face {
   font-family: "BrownBold";
-  src: url("../fonts/Brown\ Bold.ttf");
-  src: url("../fonts/Brown\ Bold.ttf'") format("ttf");
+  src: url("../fonts/BrownBold.ttf");
+  src: url("../fonts/BrownBold.ttf'") format("ttf");
 }
 body {
-  font-family: "BrownBold";
+  font-family: "BrownBold,Helvetica,Arial,sans-serif";
+  color: rgba(0, 0, 0, 0.87);
 }
-body {
-  font-family: "Brown Bold";
-}
+
 .section-padding {
   padding: 5rem;
 }

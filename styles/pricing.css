@@ -2,10 +2,13 @@
   text-align: center;
   padding-bottom: 3rem;
 }
+
 .option {
   padding: 1rem 2rem;
   max-width: 32rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  min-height: 100%;
+  position: relative;
 }
 .option__info h4:first-of-type {
   padding-bottom: 0.5rem;
@@ -24,6 +27,9 @@
   padding: 0.1rem 0.5rem;
   background-color: #3eedbf;
 }
+.option__details {
+  padding-bottom: 4rem;
+}
 .option__details ul {
   list-style: none;
   padding: 0;
@@ -37,6 +43,9 @@
 }
 .option button {
   font-weight: bold;
+  position: absolute;
+
+  bottom: 1rem;
   width: 10rem;
 }
 @media screen and (max-width: 800px) {
