@@ -92,7 +92,7 @@
     min-width: 60%;
   }
   .col-custom {
-    display: grid;
+    display: flex;
   }
   .text-vertical {
     writing-mode: initial;
@@ -115,5 +115,10 @@
 
   .audience__image-wrapper {
     min-width: 90%;
+  }
+}
+@media screen and (max-width: 560px) {
+  .col-custom {
+    display: grid;
   }
 }
