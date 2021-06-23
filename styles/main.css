@@ -14,7 +14,10 @@ body {
   font-family: "BrownBold,Helvetica,Arial,sans-serif";
   color: rgba(0, 0, 0, 0.87);
 }
-
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
 .section-padding {
   padding: 5rem;
 }

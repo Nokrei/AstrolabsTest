@@ -11,10 +11,7 @@
 .bootcamp-info__introduction p:first-of-type {
   text-transform: uppercase;
 }
-.bootcamp-info__introduction h1 {
-  font-size: 3rem;
-  font-weight: bold;
-}
+
 .bootcamp-info__introduction p {
   font-size: 1.2rem;
 }

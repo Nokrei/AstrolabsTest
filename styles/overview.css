@@ -2,6 +2,7 @@
   width: 100%;
   font-weight: bold;
 }
+
 .overview__learn {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
