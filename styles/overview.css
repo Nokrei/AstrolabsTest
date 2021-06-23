@@ -55,19 +55,20 @@ iframe {
   .overview__learn {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 3fr 2fr;
     justify-items: center;
     min-height: 50vh;
+    padding-bottom: 2rem;
   }
   .overview__course {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 2fr 1fr;
     justify-items: center;
     justify-self: left;
   }
   .overview__course--images {
-    justify-self: left;
+    justify-self: center;
     margin-left: 0;
   }
   .overview__course--images div {
