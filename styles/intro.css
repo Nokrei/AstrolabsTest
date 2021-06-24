@@ -7,7 +7,9 @@
   align-content: center;
   font-weight: bold;
 }
-
+.bootcamp-info {
+  display: grid;
+}
 .bootcamp-info__introduction p:first-of-type {
   text-transform: uppercase;
 }
@@ -56,6 +58,7 @@
 .bootcamp-info__buttons {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .bootcamp-info__buttons button {
   font-size: 1.5rem;
@@ -66,6 +69,8 @@
   font-size: 0.7rem;
 }
 .bootcamp-info__buttons .btn-light {
+  position: absolute;
+  right: -5rem;
   width: auto;
 }
 
@@ -88,13 +93,33 @@
   font-size: 1.2rem;
   padding: 0.5rem;
 }
-
+@media screen and (max-width: 1010px) {
+  .bootcamp-info__buttons .btn-light {
+    position: initial;
+    height: 4rem;
+    width: 20rem;
+  }
+  .bootcamp-info__buttons {
+    display: grid;
+    row-gap: 1rem;
+  }
+}
 @media screen and (max-width: 800px) {
   .bootcamp-info__introduction {
     text-align: center;
   }
-  .bootcamp-info__buttons {
+  .bootcamp-info__introduction p:last-of-type {
+    margin-bottom: 2rem;
+  }
+  .bootcamp-info__details {
+    margin-bottom: 2rem;
+  }
+  .bootcamp-info__buttons--left {
     display: grid;
+    row-gap: 1rem;
+  }
+  .bootcamp-info a {
+    justify-self: center;
   }
   .navbar ul {
     padding-left: 0;
