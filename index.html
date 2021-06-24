@@ -813,7 +813,20 @@
                 lifelong
                 learners. Join us
                 and meet your tribe!</h4>
-            <p>reviews</p>
+            <div class='alumni-rating'>
+                <span id='ratingStars'></span>
+                <span id='rating'>4.8 (93 reviews)</span>
+            </div>
+            <!-- Script for updating number of rating stars based on rating -->
+            <script>
+                const rating = parseFloat(document.getElementById('rating').innerHTML.slice(0, 3))
+                for (let i = 0; i < rating; i++) {
+                    const ratingStar = document.createElement('IMG');
+                    ratingStar.setAttribute("src", "./images/icons/RatingStar.png");
+                    ratingStar.setAttribute("alt", "Rating Star")
+                    document.getElementById('ratingStars').appendChild(ratingStar)
+                }
+            </script>
         </article>
         <artcile class='alumni-content'>
             <div class='row'>
