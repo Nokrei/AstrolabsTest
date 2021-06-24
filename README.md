@@ -30,6 +30,9 @@ can be found in /styles/instructors.css .
   - Initially the 'middle' of the array populates the relevant div's innerHTML. 
   - Upon user selection of radio button an `onclick` event is executed that triggers `change` and `addAnim` functions which set the innerHTML accordingly and start a fade in animation. 
   - Upon mouse leave of the radio button area, the `removeAnim` function is executed which removes the animated class from the divs so that it can be re-applied on next click.
+- Alumni rating stars number in `#ratingStars` is dependant on the value of the rating in `#rating`. 
+  - Rating value is obtained from the `#rating` element and converted to a number.
+  - using a for loop, a new star image is created and appended to `#ratingStars` with every iteration of the loop as long as `i < rating`.
 - Carousel in .promo section implemented using Glide JS. Very easy to work with and straightforward configuration. Had some issues finding the right CDN to link the script and 
   styling, as they cannot be read from node_modules
 - Accordion in .FAQ section and modals handled by Bootstrap. Modals scaled down on mobile with CSS transform.
