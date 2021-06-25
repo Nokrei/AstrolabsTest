@@ -1,6 +1,5 @@
 .overview {
   width: 100%;
-  font-weight: bold;
 }
 
 .overview__learn {
@@ -19,6 +18,9 @@
 }
 .overview__learn--outcomes i {
   color: #31b978;
+}
+.overview__learn--outcomes h3 {
+  font-weight: bold;
 }
 .iframe-wrapper {
   width: 100%;

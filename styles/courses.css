@@ -25,7 +25,6 @@
 }
 .course__details p {
   padding-left: 0.5rem;
-  font-weight: bold;
 }
 .course__buttons {
   position: absolute;
@@ -35,6 +34,7 @@
 }
 .course__buttons button {
   margin-bottom: 0.5rem;
+  width: 7rem;
 }
 .course__buttons a {
   font-size: 0.7rem;

@@ -1,8 +1,8 @@
-.content {
-  font-weight: bold;
-}
 .content__general {
   text-align: center;
+}
+.content__general a {
+  font-weight: bold;
 }
 .content__modules {
   padding-top: 5rem;
@@ -11,11 +11,9 @@
   margin-bottom: 1rem;
   min-height: 25rem;
 }
-.module h4 {
+.module p:nth-of-type(2) {
   min-height: 4rem;
-}
-.module p:not(:first-of-type) {
-  min-height: 8rem;
+  font-weight: bold;
 }
 .module div {
   padding: 1rem;
@@ -29,10 +27,11 @@
 .module a {
   position: absolute;
   bottom: 2rem;
+  font-weight: bold;
 }
 .module__number {
   text-transform: uppercase;
-  color: gray;
+  color: #909090;
   font-weight: bold;
 }
 .platforms {
@@ -44,7 +43,7 @@
 .text-vertical {
   text-transform: uppercase;
   font-weight: bold;
-  color: gray;
+  opacity: 0.46;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   text-align: center;
@@ -80,7 +79,8 @@
 .audience {
   padding-top: 5rem;
 }
-.audience__text h2 {
+.audience__text h3 {
+  font-weight: bold;
   padding-bottom: 2rem;
 }
 .audience__image-container img {

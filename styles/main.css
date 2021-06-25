@@ -4,19 +4,31 @@
   --gray-text: #151439;
   --white-background: #ffffff;
   --lightgray-background: #f8f8f8;
+  --pure-black: #000000;
+  --light-black: #141414;
+  --lighter-black: #222a31;
+  --light-gray: #6b6b6b;
+  --dark-gray: #18191f;
+  --alumni-gray: #474a57;
 }
 @font-face {
-  font-family: "BrownBold";
-  src: url("../fonts/BrownBold.ttf");
-  src: url("../fonts/BrownBold.ttf'") format("ttf");
+  font-family: BrownBold;
+  src: url("../fonts/Brown-Font/Brown\ Bold.ttf");
+}
+@font-face {
+  font-family: BrownMedium;
+  src: url("../fonts/Brown-Font/BrownMedium\ Regular.ttf Regular.ttf");
 }
 body {
-  font-family: "BrownBold,Helvetica,Arial,sans-serif";
-  color: rgba(0, 0, 0, 0.87);
+  font-family: "BrownMedium";
+  color: var(--light-black);
 }
 h1 {
   font-size: 3rem;
   font-weight: bold;
+}
+.text-large {
+  font-size: 1.1rem;
 }
 .section-padding {
   padding: 5rem;
@@ -29,6 +41,15 @@ h1 {
 .blue-accent {
   color: var(--blue-accent-color);
 }
+.pure-black {
+  color: var(--pure-black);
+}
+.light-black {
+  color: var(--light-black);
+}
+.lighter-black {
+  color: var(--lighter-black);
+}
 .gray-accent {
   color: var(--gray-accent-color);
 }
@@ -36,6 +57,15 @@ h1 {
   color: var(--gray-text);
   opacity: 0.4;
   font-weight: bold;
+}
+.dark-gray {
+  color: var(--dark-gray);
+}
+.light-gray {
+  color: var(--light-gray);
+}
+.alumni-gray {
+  color: var(--alumni-gray);
 }
 .background-white {
   background-color: var(--white-background);

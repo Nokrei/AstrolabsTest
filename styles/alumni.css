@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
 .alumni {
   text-align: center;
 }
@@ -47,7 +48,6 @@
 }
 
 .testimonial__text {
-  font-weight: bold;
   padding-bottom: 10rem;
 }
 .testimonial__student {
@@ -56,13 +56,16 @@
   left: 0;
   right: 0;
   margin: auto;
+  font-family: "Manrope", sans-serif;
 }
 .testimonial__student p:first-of-type {
+  font-size: 1.1rem;
   font-weight: bold;
-  font-size: 1.5rem;
   margin: 0;
 }
-
+.testimonial__student p:last-of-type {
+  font-size: 0.9rem;
+}
 .alumni-content .form-check-input {
   cursor: pointer;
 }
